@@ -74,7 +74,7 @@ class FiltersScreen extends ConsumerWidget {
             onChanged: (isChecked) {
               ref
                   .read(filtersProvider.notifier)
-                  .setFilter(Filter.vegan, isChecked);
+                  .setFilter(Filter.vegetarian, isChecked);
             },
             title: Text(
               'Vegeterian-free',

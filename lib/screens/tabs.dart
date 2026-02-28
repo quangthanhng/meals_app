@@ -24,11 +24,12 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
   }
 
   void _setScreen(String identifier) {
-    Navigator.of(context).pop();
+    Navigator.pop(context);
     if (identifier == 'filters') {
-      Navigator.of(
+      Navigator.push(
         context,
-      ).push(MaterialPageRoute(builder: (ctx) => const FiltersScreen()));
+        MaterialPageRoute(builder: (ctx) => const FiltersScreen()),
+      );
     }
   }
 
